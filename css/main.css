@@ -675,10 +675,7 @@ ul {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55.21%, rgba(49, 38, 26, 0)), color-stop(72.92%, rgba(49, 38, 26, 0.71)), to(#31261a));
   background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%);
   height: 444px;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  overflow: hidden;
 }
 .format-card__image {
   position: absolute;
