@@ -336,7 +336,7 @@ ul {
   display: none;
   border-radius: 400px 400px 0px 0px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   .tradishions-section__image {
     display: block;
   }
