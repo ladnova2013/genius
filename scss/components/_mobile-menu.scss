@@ -1,0 +1,72 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px 24px;
+  z-index: 2;
+  background-color: var(--color-primary-light);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+  &__btn-close {
+    position: absolute;
+    display: flex;
+    top: 16px;
+    right: 24px;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    stroke: var(--color-primary-dark);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    transition: color 0.3s;
+  }
+
+  &__link:hover {
+    color: var(--color-brand-normal);
+  }
+
+  &::before {
+    position: absolute;
+    background-image: url(/images/decor-arround-mobile.png);
+    content: "";
+    width: 156px;
+    height: 157px;
+    bottom: 0;
+    right: 0;
+  }
+
+  &::after {
+    position: absolute;
+    background-image: url(/images/decor-bread-mobile.png);
+
+    content: "";
+    width: 147px;
+    height: 231px;
+    bottom: 0;
+    right: 0;
+  }
+}
